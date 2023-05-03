@@ -1,4 +1,4 @@
-#All Algorithm Codes will now be uploaded here.
+# All Algorithm Codes will now be uploaded here.
 
 ## Previous Algorithm Repos
 - [2019/01/16 ~ 2019/04/17](https://github.com/fabiankmroh/jamcode): Intro to C Algorithms
