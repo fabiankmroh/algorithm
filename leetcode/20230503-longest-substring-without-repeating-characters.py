@@ -14,20 +14,26 @@ class Solution:
         letter_tmparr = '' 
 
         for i in range(len(s)-1):
+            print(i, s[i])
             # Initialization
             letter_tmparr = s[i]
+            # print("Init:", letter_tmparr)
 
             for j in range(1, len(s)-i):
+                # print("j:", j, s[i+j])
                 if Solution.isin(s[i+j], letter_tmparr): # Kill Sequence: End of Non-Repetition
                     if len(letter_tmparr) > len(max_conti_arr):
                         max_conti_arr = letter_tmparr
-                    
                     break
-                    
-                letter_tmparr += s[i+j]
+                else: 
+                    # print("False")
+                    letter_tmparr += s[i+j]
+                    # print("Add:", letter_tmparr)
 
-        if len(letter_tmparr) > len(max_conti_arr):
-            max_conti_arr = letter_tmparr
+            # print("-----")
+
+            if len(letter_tmparr) > len(max_conti_arr):
+                max_conti_arr = letter_tmparr
 
         print(max_conti_arr)
         return len(max_conti_arr)
