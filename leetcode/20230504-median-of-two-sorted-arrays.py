@@ -1,10 +1,25 @@
 # https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        nums3 = nums1 + nums2
-
-        if len(nums3) % 2 == 0:
-            return (nums3[int(len(nums3) / 2)] + nums3[int(len(nums3) / 2 + 1)])/2
+    def findMedianSortedArrays(nums1, nums2):
+        nums = nums1 + nums2
+    
+        # Sort the concatenated list
+        nums.sort()
+        
+        # Calculate the median
+        n = len(nums)
+        if n % 2 == 0:
+            median = (nums[n//2-1] + nums[n//2]) / 2
         else:
-            return nums3[int(len(nums3)/2 + 1)]
+            median = nums[n//2]
+        
+        return median
+        
+    def __init__(self):
+        nums1 = [int(x) for x in input().split()]
+        nums2 = [int(x) for x in input().split()]
+
+        print(Solution.findMedianSortedArrays(nums1, nums2))
+
+Solution()
