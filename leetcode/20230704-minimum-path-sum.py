@@ -22,7 +22,7 @@ class Solution(object):
         """
         M = len(grid)
         N = len(grid[0])
-        cost = [[-1]*N for _ in range(M)]
+        cost = [[-1] * N for _ in range(M)]
         cost[M-1][N-1] = grid[M-1][N-1]
         
         return self.helper(0, 0, grid, cost)
