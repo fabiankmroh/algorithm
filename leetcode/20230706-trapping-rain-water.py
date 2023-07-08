@@ -1,9 +1,18 @@
 class Solution:
-    wall_stack = []
     def trap(self, height: List[int]) -> int:
-        for i in height:
-            self.wall_stack.append(i)
-            size = len(self.wall_stack)
-            
-            if i > wall_stack[size]:
-                
+        answer = 0
+        max_height = max(height)
+        max_place = height.index(max_height)
+        
+        left_max = height[0]
+        right_max = height[-1]
+        
+        for i in range(max_place):
+            left_max = max(left_max, height[i])
+            answer += left_max - height[i]
+        
+        for i in reversed(range(max_place, len(height))):
+            right_max = max(right_max, height[i])      
+            answer += right_max - height[i]      
+        
+        return answer
