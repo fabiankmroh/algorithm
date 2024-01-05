@@ -9,4 +9,4 @@
 - [2020/06/06](https://github.com/fabiankmroh/pyalgo/): Python Algorithms for HackerRank
 
 2023/05/24: Back on Track to Algorithm w/ LeetCode**
-**2024/01/05: Start of [Top Interview 150][https://leetcode.com/studyplan/top-interview-150/] with [Hoho Noona][https://github.com/dbswjd24]
+**2024/01/05: Start of [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/) with [Hoho Noona](https://github.com/dbswjd24)
