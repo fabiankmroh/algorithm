@@ -7,6 +7,6 @@
 - [2020/06/08 ~ 2020/06/21](https://github.com/fabiankmroh/calgo): C Algorithm Practice Problems
 - [2020/06/14 ~ 2020/09/13](https://github.com/fabiankmroh/jamcodehs): Algorithm after the Start of HS
 - [2020/06/06](https://github.com/fabiankmroh/pyalgo/): Python Algorithms for HackerRank
-
-2023/05/24: Back on Track to Algorithm w/ LeetCode
+- 2023/05/24: Back on Track to Algorithm w/ LeetCode
+  
 **2024/01/05: Start of [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/) with [Hoho Noona](https://github.com/dbswjd24)**
